@@ -1,0 +1,91 @@
+header {
+  color: aqua;
+}
+
+.primary-text {
+  color: #fff;
+}
+
+.primary-background {
+  background-color: #fff;
+}
+
+.secondary-text {
+  color: red;
+}
+
+.secondary-background {
+  background-color: red;
+}
+
+.tertiary-text {
+  color: green;
+}
+
+.tertiary-background {
+  background-color: green;
+}
+
+.info-text {
+  color: gray;
+}
+
+.info-background {
+  background-color: gray;
+}
+
+.text-1 {
+  opacity: 0.1;
+}
+
+.text-2 {
+  opacity: 0.2;
+}
+
+.text-3 {
+  opacity: 0.3;
+}
+
+.text-4 {
+  opacity: 0.4;
+}
+
+.text-5 {
+  opacity: 0.5;
+}
+
+.text-6 {
+  opacity: 0.6;
+}
+
+.text-7 {
+  opacity: 0.7;
+}
+
+.text-8 {
+  opacity: 0.8;
+}
+
+body {
+  font-size: 1.25rem;
+}
+
+footer {
+  color: saddlebrown;
+}
+
+button {
+  padding: 10px;
+  color: red;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    color: red;
+  }
+}/*# sourceMappingURL=styles.css.map */

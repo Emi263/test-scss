@@ -1,0 +1,60 @@
+@use "sass:math";
+
+header {
+  color: aqua;
+}
+
+
+
+$colors: (
+  primary: #fff,
+  secondary:red,
+  tertiary: green,
+  info: gray,
+);
+
+@each $key, $value in $colors {
+  // Use -get() to retrieve values from the map
+  $color: map-get($colors, $key);
+
+  .#{$key}-text {
+    color: $color;
+  }
+
+  .#{$key}-background {
+    background-color: $color;
+  }
+}
+
+@for $i from 1 to 9 {
+  .text-#{$i} {
+    opacity: $i * 0.1;
+   }
+}
+
+
+//math module, needs to be imported (read sass docs). Should be used as math.method 
+
+
+
+//mixin to center any element both horizontally and vertically
+//should be used in parent container
+// @mixin center {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+
+//function to convert px to rem . Returns rem value (ex: 1rem)
+@function rem($input) {
+  @return math.div($input, 16px) + rem;
+}
+
+body {
+  font-size: rem(20px);
+}
+
+
+
+

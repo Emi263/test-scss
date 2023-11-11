@@ -1,0 +1,28 @@
+@forward "./header";
+@forward "./footer";
+@use "./colors" as colors;
+
+
+
+@mixin button-props {
+  padding: 10px;
+  color: red;
+}
+
+
+button {
+  @include button-props;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width:500px) {
+    color: red;
+  }
+}
+
+
+
+
